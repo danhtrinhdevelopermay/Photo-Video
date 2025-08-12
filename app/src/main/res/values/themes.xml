@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.iOSStyleMediaViewer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/system_blue</item>
+        <item name="colorOnPrimary">@color/system_label</item>
+        <item name="colorPrimaryContainer">@color/system_background_secondary</item>
+        <item name="colorOnPrimaryContainer">@color/system_label</item>
+        <item name="colorSecondary">@color/system_purple</item>
+        <item name="colorOnSecondary">@color/system_label</item>
+        <item name="colorSecondaryContainer">@color/system_background_tertiary</item>
+        <item name="colorOnSecondaryContainer">@color/system_label</item>
+        <item name="colorTertiary">@color/system_pink</item>
+        <item name="colorOnTertiary">@color/system_label</item>
+        <item name="colorTertiaryContainer">@color/system_background_tertiary</item>
+        <item name="colorOnTertiaryContainer">@color/system_label</item>
+        <item name="colorError">@color/system_red</item>
+        <item name="colorErrorContainer">@color/system_background_tertiary</item>
+        <item name="colorOnError">@color/system_label</item>
+        <item name="colorOnErrorContainer">@color/system_label</item>
+        <item name="colorBackground">@color/system_background</item>
+        <item name="colorOnBackground">@color/system_label</item>
+        <item name="colorSurface">@color/system_background_secondary</item>
+        <item name="colorOnSurface">@color/system_label</item>
+        <item name="colorSurfaceVariant">@color/system_background_tertiary</item>
+        <item name="colorOnSurfaceVariant">@color/system_label_secondary</item>
+        <item name="colorOutline">@color/glass_accent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.iOSStyleMediaViewer.Fullscreen" parent="Theme.iOSStyleMediaViewer">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>

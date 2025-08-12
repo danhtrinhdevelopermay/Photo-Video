@@ -1,0 +1,13 @@
+modules = ["python-3.11", "java-21"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+packages = ["android-tools"]
+
+[workflows]
+
+[[ports]]
+localPort = 5000
+externalPort = 80

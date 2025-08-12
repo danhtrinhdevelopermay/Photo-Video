@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- iOS System Colors -->
+    <color name="system_background">#FF000000</color>
+    <color name="system_background_secondary">#FF1C1C1E</color>
+    <color name="system_background_tertiary">#FF2C2C2E</color>
+    
+    <color name="system_label">#FFFFFFFF</color>
+    <color name="system_label_secondary">#99FFFFFF</color>
+    <color name="system_label_tertiary">#66FFFFFF</color>
+    
+    <color name="system_blue">#FF007AFF</color>
+    <color name="system_green">#FF30D158</color>
+    <color name="system_red">#FFFF3B30</color>
+    <color name="system_orange">#FFFF9500</color>
+    <color name="system_yellow">#FFFFCC00</color>
+    <color name="system_pink">#FFFF2D92</color>
+    <color name="system_purple">#FFAF52DE</color>
+    
+    <!-- Glass Effect Colors -->
+    <color name="glass_background">#80000000</color>
+    <color name="glass_accent">#40FFFFFF</color>
+    <color name="blur_overlay">#66000000</color>
+</resources>

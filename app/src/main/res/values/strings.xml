@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iOS Style Media Viewer</string>
+    <string name="photos">Photos</string>
+    <string name="albums">Albums</string>
+    <string name="library">Library</string>
+    <string name="back">Back</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="favorite">Favorite</string>
+    <string name="video_duration">%1$s</string>
+    <string name="media_count">%1$d items</string>
+</resources>
