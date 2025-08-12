@@ -1,0 +1,27 @@
+﻿2025-08-12T15:00:10.2775284Z ##[group]Run ./gradlew testDebugUnitTest --continue
+2025-08-12T15:00:10.2775692Z [36;1m./gradlew testDebugUnitTest --continue[0m
+2025-08-12T15:00:10.2815438Z shell: /usr/bin/bash -e {0}
+2025-08-12T15:00:10.2815668Z env:
+2025-08-12T15:00:10.2815938Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-08-12T15:00:10.2816376Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-08-12T15:00:10.2816733Z ##[endgroup]
+2025-08-12T15:00:10.9703733Z Calculating task graph as no configuration cache is available for tasks: testDebugUnitTest
+2025-08-12T15:00:11.1115689Z 
+2025-08-12T15:00:11.1117361Z FAILURE: Build failed with an exception.
+2025-08-12T15:00:11.1138029Z Configuration cache entry stored.
+2025-08-12T15:00:11.1140024Z 
+2025-08-12T15:00:11.1140686Z * Where:
+2025-08-12T15:00:11.1141248Z Build file '/home/runner/work/Photo-Video/Photo-Video/build.gradle' line: 10
+2025-08-12T15:00:11.1141804Z 
+2025-08-12T15:00:11.1142346Z * What went wrong:
+2025-08-12T15:00:11.1142951Z A problem occurred evaluating root project 'iOS Style Media Viewer'.
+2025-08-12T15:00:11.1144212Z > Build was configured to prefer settings repositories over project repositories but repository 'Google' was added by build file 'build.gradle'
+2025-08-12T15:00:11.1145129Z 
+2025-08-12T15:00:11.1145253Z * Try:
+2025-08-12T15:00:11.1145640Z > Run with --stacktrace option to get the stack trace.
+2025-08-12T15:00:11.1146254Z > Run with --info or --debug option to get more log output.
+2025-08-12T15:00:11.1146806Z > Run with --scan to get full insights.
+2025-08-12T15:00:11.1147317Z > Get more help at https://help.gradle.org.
+2025-08-12T15:00:11.1147656Z 
+2025-08-12T15:00:11.1147781Z BUILD FAILED in 749ms
+2025-08-12T15:00:11.1260821Z ##[error]Process completed with exit code 1.

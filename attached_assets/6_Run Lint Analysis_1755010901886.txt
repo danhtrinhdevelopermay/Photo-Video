@@ -1,0 +1,40 @@
+﻿2025-08-12T14:59:28.0441638Z ##[group]Run ./gradlew lintDebug --continue
+2025-08-12T14:59:28.0442481Z [36;1m./gradlew lintDebug --continue[0m
+2025-08-12T14:59:28.0487673Z shell: /usr/bin/bash -e {0}
+2025-08-12T14:59:28.0488335Z env:
+2025-08-12T14:59:28.0489051Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-08-12T14:59:28.0490010Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-08-12T14:59:28.0490958Z ##[endgroup]
+2025-08-12T14:59:30.3077537Z Downloading https://services.gradle.org/distributions/gradle-8.4-bin.zip
+2025-08-12T14:59:34.4286187Z ............10%............20%.............30%............40%.............50%............60%.............70%............80%.............90%............100%
+2025-08-12T14:59:35.7305323Z 
+2025-08-12T14:59:35.7306083Z Welcome to Gradle 8.4!
+2025-08-12T14:59:35.7306704Z 
+2025-08-12T14:59:35.7318142Z Here are the highlights of this release:
+2025-08-12T14:59:35.7319179Z  - Compiling and testing with Java 21
+2025-08-12T14:59:35.7320133Z  - Faster Java compilation on Windows
+2025-08-12T14:59:35.7325450Z  - Role focused dependency configurations creation
+2025-08-12T14:59:35.7325893Z 
+2025-08-12T14:59:35.7326254Z For more details see https://docs.gradle.org/8.4/release-notes.html
+2025-08-12T14:59:35.7326786Z 
+2025-08-12T14:59:36.3298411Z Starting a Gradle Daemon (subsequent builds will be faster)
+2025-08-12T14:59:39.1318769Z Calculating task graph as no configuration cache is available for tasks: lintDebug
+2025-08-12T15:00:09.8321558Z 
+2025-08-12T15:00:09.8322124Z FAILURE: Build failed with an exception.
+2025-08-12T15:00:09.8322506Z 
+2025-08-12T15:00:09.8322658Z * Where:
+2025-08-12T15:00:09.8323152Z Build file '/home/runner/work/Photo-Video/Photo-Video/build.gradle' line: 10
+2025-08-12T15:00:09.8337685Z 
+2025-08-12T15:00:09.8338760Z * What went wrong:
+2025-08-12T15:00:09.8339300Z A problem occurred evaluating root project 'iOS Style Media Viewer'.
+2025-08-12T15:00:09.8340468Z > Build was configured to prefer settings repositories over project repositories but repository 'Google' was added by build file 'build.gradle'
+2025-08-12T15:00:09.8341584Z 
+2025-08-12T15:00:09.8341704Z * Try:
+2025-08-12T15:00:09.8342082Z > Run with --stacktrace option to get the stack trace.
+2025-08-12T15:00:09.8342663Z > Run with --info or --debug option to get more log output.
+2025-08-12T15:00:09.8343183Z > Run with --scan to get full insights.
+2025-08-12T15:00:09.8343655Z > Get more help at https://help.gradle.org.
+2025-08-12T15:00:09.8344428Z Configuration cache entry stored.
+2025-08-12T15:00:09.8372460Z 
+2025-08-12T15:00:09.8373190Z BUILD FAILED in 40s
+2025-08-12T15:00:10.2728953Z ##[error]Process completed with exit code 1.

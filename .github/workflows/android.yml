@@ -34,19 +34,33 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
       
-    # Step 1: Code Analysis - Lint Check
-    - name: Run Lint Analysis
-      run: ./gradlew lintDebug --continue
+    # Verify Gradle setup
+    - name: Verify Gradle Wrapper
+      run: |
+        echo "Checking Gradle wrapper..."
+        ./gradlew --version
+        echo "Checking project structure..."
+        ls -la
+        ls -la app/
+    
+    # Step 1: Clean project first
+    - name: Clean Project
+      run: ./gradlew clean --stacktrace
       continue-on-error: true
       
-    # Step 2: Unit Tests
-    - name: Run Unit Tests
-      run: ./gradlew testDebugUnitTest --continue
-      continue-on-error: true
-      
-    # Step 3: Build Debug APK
+    # Step 2: Build Debug APK (main target)
     - name: Build Debug APK
-      run: ./gradlew assembleDebug
+      run: ./gradlew assembleDebug --stacktrace --info
+      
+    # Step 3: Run Lint Analysis
+    - name: Run Lint Analysis
+      run: ./gradlew lintDebug --continue --stacktrace
+      continue-on-error: true
+      
+    # Step 4: Run Unit Tests
+    - name: Run Unit Tests
+      run: ./gradlew testDebugUnitTest --continue --stacktrace
+      continue-on-error: true
       
     # Step 4: Build Release APK (if on main branch)
     - name: Build Release APK
@@ -78,18 +92,24 @@ jobs:
           app/build/reports/tests/testDebugUnitTest/
           app/build/reports/lint-results-debug.html
           
-    # Display build results
+    # Display build results and diagnostics
     - name: Display Build Status
       if: always()
       run: |
         echo "=== BUILD SUMMARY ==="
         echo "✅ Code checkout completed"
         echo "✅ JDK 17 setup completed"
+        echo "📁 Project structure:"
+        find . -name "*.gradle" -type f
+        echo "📁 APK output directory:"
+        ls -la app/build/outputs/apk/ 2>/dev/null || echo "No APK outputs found"
         if [ -f "app/build/outputs/apk/debug/app-debug.apk" ]; then
           echo "✅ Debug APK built successfully"
           ls -lh app/build/outputs/apk/debug/app-debug.apk
         else
           echo "❌ Debug APK build failed"
+          echo "🔍 Checking build directory..."
+          ls -la app/build/ 2>/dev/null || echo "No build directory found"
         fi
         if [ -f "app/build/outputs/apk/release/app-release.apk" ]; then
           echo "✅ Release APK built successfully"
