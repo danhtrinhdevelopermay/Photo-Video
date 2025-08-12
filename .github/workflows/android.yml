@@ -21,6 +21,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+        
     - name: Cache Gradle packages
       uses: actions/cache@v4
       with:
@@ -34,14 +37,18 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
       
-    # Verify Gradle setup
-    - name: Verify Gradle Wrapper
+    # Verify Gradle setup and XML files
+    - name: Verify Gradle Wrapper and XML Files
       run: |
         echo "Checking Gradle wrapper..."
         ./gradlew --version
         echo "Checking project structure..."
         ls -la
         ls -la app/
+        echo "Verifying XML files are valid..."
+        xmllint --noout app/src/main/res/xml/backup_rules.xml
+        xmllint --noout app/src/main/res/xml/data_extraction_rules.xml
+        echo "XML files validation passed!"
     
     # Step 1: Clean project first
     - name: Clean Project
