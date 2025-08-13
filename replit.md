@@ -67,13 +67,15 @@ app/
 ✅ **Artifact Upload**: APK files and reports using actions/upload-artifact@v4
 ✅ **Enhanced Diagnostics**: Detailed build status reporting and error tracking
 
-### Pipeline Stages (Optimized)
+### Pipeline Stages (Analysis-First Approach - Updated August 13, 2025)
 1. **Environment Setup**: JDK 17 + Gradle cache + wrapper verification
-2. **Clean Build**: Fresh start to avoid cached issues
-3. **APK Generation**: Primary build target with full logging
-4. **Code Quality**: Lint analysis (non-blocking)
-5. **Testing**: Unit tests (non-blocking)
-6. **Artifact Management**: Upload APKs and reports
+2. **Clean Build**: Fresh start to avoid cached issues  
+3. **Resource Validation**: XML files and Android resources check
+4. **Code Quality Analysis**: Lint analysis (must pass before build)
+5. **Unit Testing**: Code functionality verification (must pass before build)
+6. **Debug APK Generation**: Build only after analysis and tests pass
+7. **Release APK Generation**: Build only after all checks pass (main branch)
+8. **Artifact Management**: Upload APKs and analysis reports
 
 ## Dependencies Used
 
@@ -124,6 +126,12 @@ app/
   - **Launcher Icons**: Complete set of launcher icons for all Android densities (retained)
   - **Architecture Alignment**: Source code expectations now match build configuration
   - **CI/CD Enhancement**: Robust GitHub Actions pipeline with comprehensive error handling
+- **Analysis-First Workflow (August 13, 2025)**: Restructured CI/CD pipeline to prioritize code quality:
+  - **Lint Analysis First**: Code quality checks now run before APK build
+  - **Unit Tests First**: Functionality verification before compilation
+  - **Build Gating**: APK builds only proceed after successful analysis and tests
+  - **Local Script Update**: Enhanced build-test.sh to follow same analysis-first approach
+  - **Report Improvements**: Better artifact naming and status reporting
 
 ## Build Instructions
 
