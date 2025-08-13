@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base theme using AppCompat for maximum compatibility -->
-    <style name="Theme.iOSStyleMediaViewer" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <!-- Base theme using Material3 for Jetpack Compose compatibility -->
+    <style name="Theme.iOSStyleMediaViewer" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary colors -->
         <item name="colorPrimary">@color/system_blue</item>
-        <item name="colorPrimaryDark">@color/system_blue</item>
-        <item name="colorAccent">@color/system_purple</item>
-        
-        <!-- Background colors -->
         <item name="android:colorBackground">@color/system_background</item>
-        <item name="colorBackground">@color/system_background</item>
         <item name="android:textColorPrimary">@color/system_label</item>
         <item name="android:textColorSecondary">@color/system_label_secondary</item>
         

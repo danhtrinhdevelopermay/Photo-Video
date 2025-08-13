@@ -116,13 +116,14 @@ app/
 - **Enhanced CI/CD Pipeline**: Added Android SDK setup and XML validation to prevent build failures
 - **GitHub Actions Robustness**: Added fallback Python XML validation, SDK license acceptance, improved error handling
 - **YAML Syntax Fix**: Resolved line 67 error by creating separate validate_xml.py script for cleaner YAML structure
-- **CRITICAL APK Build Fix (August 13, 2025)**: Resolved persistent `attr/colorBackground` error and missing launcher icons:
-  - **Dependency Cleanup**: Removed conflicting Material Design libraries (Material 2 + Material Components)
-  - **Theme System Overhaul**: Switched from Material3 to AppCompat for maximum compatibility
-  - **Custom Attribute Definition**: Added missing colorBackground attribute to resolve resource linking
-  - **Launcher Icons Creation**: Generated complete set of launcher icons for all Android densities
-  - **Enhanced CI/CD**: Deep clean process and dependency refresh in GitHub Actions
-  - **Build Validation**: Comprehensive XML validation and dependency conflict resolution
+- **CRITICAL APK Build Fix (August 13, 2025)**: Resolved persistent compilation errors through comprehensive architecture alignment:
+  - **Root Cause Analysis**: Material3 source code conflicting with AppCompat theme system  
+  - **Theme System Restoration**: Reverted to Material3.DayNight.NoActionBar to match source code APIs
+  - **Dependency Optimization**: Removed AppCompat dependency, kept clean Material3 Compose stack
+  - **Resource Cleanup**: Eliminated custom colorBackground attribute causing conflicts
+  - **Launcher Icons**: Complete set of launcher icons for all Android densities (retained)
+  - **Architecture Alignment**: Source code expectations now match build configuration
+  - **CI/CD Enhancement**: Robust GitHub Actions pipeline with comprehensive error handling
 
 ## Build Instructions
 
