@@ -4,7 +4,7 @@ expertMode = true
 
 [nix]
 channel = "stable-25_05"
-packages = ["android-tools", "freetype", "lcms2", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "libyaml", "openjpeg", "tcl", "tk", "zlib", "openjdk17", "wget", "unzip"]
+packages = ["android-tools", "freetype", "lcms2", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "libyaml", "openjpeg", "tcl", "tk", "zlib", "openjdk17", "wget", "unzip", "imagemagick"]
 
 [workflows]
 

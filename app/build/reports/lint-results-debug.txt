@@ -259,17 +259,4 @@ val SystemLabelTertiary = Color(0xFF66FFFFFF)
    lint.unused-resources.exclude-tests =true.
    ,
 
-/home/runner/workspace/app/src/main/res/mipmap-hdpi/ic_launcher_round.png: Warning: The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png [IconDuplicates]
-/home/runner/workspace/app/src/main/res/mipmap-mdpi/ic_launcher_round.png: Warning: The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png [IconDuplicates]
-/home/runner/workspace/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png: Warning: The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png [IconDuplicates]
-/home/runner/workspace/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png: Warning: The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png [IconDuplicates]
-/home/runner/workspace/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png: Warning: The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png [IconDuplicates]
-
-   Explanation for issues of type "IconDuplicates":
-   If an icon is repeated under different names, you can consolidate and just
-   use one of the icons and delete the others to make your application
-   smaller. However, duplicated icons usually are not intentional and can
-   sometimes point to icons that were accidentally overwritten or accidentally
-   not updated.
-
-0 errors, 47 warnings
+0 errors, 42 warnings

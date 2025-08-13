@@ -135,6 +135,13 @@ app/
   - **Fixed Dependencies**: Added missing Robolectric and Dispatchers imports for unit tests ✅
   - **Resolved Lint Issues**: Fixed backup_rules.xml structure for proper Android backup rules ✅
   - **Complete Pipeline Success**: All stages (Clean → Validate → Lint → Test → Build) working correctly ✅
+- **GitHub Actions APK Build Fix (August 13, 2025)**: Resolved critical release build failures:
+  - **Root Cause**: Corrupted 67-byte launcher icon PNG files causing AAPT compilation errors ✅
+  - **Comprehensive Solution**: Generated complete set of valid launcher icons for all densities ✅  
+  - **Icon Design**: Camera/photo-themed icons matching app purpose (1.5KB-7.4KB) ✅
+  - **Enhanced Diagnostics**: Added launcher icon validation to GitHub Actions workflow ✅
+  - **Build Verification**: Local debug and release APK builds successful ✅
+  - **CI/CD Robustness**: Pipeline now prevents and detects corrupted resource files ✅
 
 ## Build Instructions
 

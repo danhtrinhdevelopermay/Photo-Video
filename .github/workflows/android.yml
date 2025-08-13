@@ -118,7 +118,14 @@ jobs:
       if: github.ref == 'refs/heads/main'
       run: |
         echo "Building release APK after all checks pass..."
-        ./gradlew assembleRelease --stacktrace
+        echo "Checking launcher icons before release build..."
+        ls -la app/src/main/res/mipmap-*/ic_launcher*.png
+        echo "Launcher icon file sizes should be >1KB (not 67 bytes):"
+        wc -c app/src/main/res/mipmap-*/ic_launcher*.png
+        echo "Building release APK with diagnostics..."
+        ./gradlew assembleRelease --stacktrace --info
+        echo "Release build completed, checking outputs..."
+        ls -la app/build/outputs/apk/release/ 2>/dev/null || echo "No release APK outputs found"
       
     # Upload artifacts
     - name: Upload Debug APK

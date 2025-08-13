@@ -1,31 +1,75 @@
 [
     {
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "com.mediaviewer.ios.app-merged_res-68:/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "com.mediaviewer.ios.app-main-70:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/xml_backup_rules.xml.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/xml/backup_rules.xml"
     },
     {
         "merged": "com.mediaviewer.ios.app-merged_res-68:/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "com.mediaviewer.ios.app-main-70:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.mediaviewer.ios.app-merged_res-68:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.mediaviewer.ios.app-main-70:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "com.mediaviewer.ios.app-merged_res-68:/mipmap-hdpi_ic_launcher.png.flat",
         "source": "com.mediaviewer.ios.app-main-70:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.mediaviewer.ios.app-merged_res-68:/xml_backup_rules.xml.flat",
-        "source": "com.mediaviewer.ios.app-main-70:/xml/backup_rules.xml"
+        "merged": "com.mediaviewer.ios.app-merged_res-68:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.mediaviewer.ios.app-main-70:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "com.mediaviewer.ios.app-merged_res-68:/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "com.mediaviewer.ios.app-main-70:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "com.mediaviewer.ios.app-merged_res-68:/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "com.mediaviewer.ios.app-main-70:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-merged_res-68:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/runner/.gradle/daemon/8.4/com.mediaviewer.ios.app-main-70:/mipmap-hdpi/ic_launcher.png"
     },
     {
         "merged": "com.mediaviewer.ios.app-merged_res-68:/mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -38,10 +82,6 @@
     {
         "merged": "com.mediaviewer.ios.app-merged_res-68:/mipmap-mdpi_ic_launcher.png.flat",
         "source": "com.mediaviewer.ios.app-main-70:/mipmap-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "com.mediaviewer.ios.app-merged_res-68:/xml_data_extraction_rules.xml.flat",
-        "source": "com.mediaviewer.ios.app-main-70:/xml/data_extraction_rules.xml"
     },
     {
         "merged": "com.mediaviewer.ios.app-merged_res-68:/mipmap-xxxhdpi_ic_launcher.png.flat",

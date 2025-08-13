@@ -177,9 +177,9 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 47 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 42 warnings</span>
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Wed Aug 13 01:36:57 GMT 2025 by AGP (8.1.4)</nav>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Wed Aug 13 01:55:39 GMT 2025 by AGP (8.1.4)</nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -193,7 +193,6 @@ document.getElementById(id).style.display = 'none';
       <a class="mdl-navigation__link" href="#InvalidColorHexValue"><i class="material-icons warning-icon">warning</i>Invalid Color hex value (2)</a>
       <a class="mdl-navigation__link" href="#PluralsCandidate"><i class="material-icons warning-icon">warning</i>Potential Plurals (1)</a>
       <a class="mdl-navigation__link" href="#UnusedResources"><i class="material-icons warning-icon">warning</i>Unused resources (21)</a>
-      <a class="mdl-navigation__link" href="#IconDuplicates"><i class="material-icons warning-icon">warning</i>Duplicated icons under different names (5)</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -235,11 +234,6 @@ document.getElementById(id).style.display = 'none';
 <tr>
 <td class="countColumn">21</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#UnusedResources">UnusedResources</a>: Unused resources</td></tr>
-<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
-</td></tr>
-<tr>
-<td class="countColumn">5</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
-<a href="#IconDuplicates">IconDuplicates</a>: Duplicated icons under different names</td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#ExtraIssues">Included Additional Checks (62)</a>
 </td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (40)</a>
@@ -951,106 +945,6 @@ To suppress this error, use the issue id "UnusedResources" as explained in the <
               <div class="mdl-card__actions mdl-card--border">
 <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationUnusedResourcesLink" onclick="reveal('explanationUnusedResources');">
 Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="UnusedResourcesCardLink" onclick="hideid('UnusedResourcesCard');">
-Dismiss</button>            </div>
-            </div>
-          </section>
-<a name="Usability:Icons"></a>
-<a name="IconDuplicates"></a>
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="IconDuplicatesCard" style="display: block;">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Duplicated icons under different names</h2>
-  </div>
-              <div class="mdl-card__supporting-text">
-<div class="issue">
-<div class="warningslist">
-<span class="location"><a href="../../src/main/res/mipmap-hdpi/ic_launcher_round.png">../../src/main/res/mipmap-hdpi/ic_launcher_round.png</a></span>: <span class="message">The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png</span><br />
-<ul></ul><button id="Location1DivLink" onclick="reveal('Location1Div');" />+ 1 Additional Locations...</button>
-<div id="Location1Div" style="display: none">
-Additional locations: <ul>
-<li> <span class="location"><a href="../../src/main/res/mipmap-hdpi/ic_launcher.png">../../src/main/res/mipmap-hdpi/ic_launcher.png</a></span>
-</ul>
-</div><br/><br/>
-<table>
-<tr><td><a href="../../src/main/res/mipmap-hdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/mipmap-hdpi/ic_launcher.png" /></a>
-</td><td><a href="../../src/main/res/mipmap-hdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-hdpi/ic_launcher_round.png" /></a>
-</td></tr><tr><th></th><th></th></tr>
-</table>
-<span class="location"><a href="../../src/main/res/mipmap-mdpi/ic_launcher_round.png">../../src/main/res/mipmap-mdpi/ic_launcher_round.png</a></span>: <span class="message">The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png</span><br />
-<ul></ul><button id="Location2DivLink" onclick="reveal('Location2Div');" />+ 1 Additional Locations...</button>
-<div id="Location2Div" style="display: none">
-Additional locations: <ul>
-<li> <span class="location"><a href="../../src/main/res/mipmap-mdpi/ic_launcher.png">../../src/main/res/mipmap-mdpi/ic_launcher.png</a></span>
-</ul>
-</div><br/><br/>
-<table>
-<tr><td><a href="../../src/main/res/mipmap-mdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/mipmap-mdpi/ic_launcher.png" /></a>
-</td><td><a href="../../src/main/res/mipmap-mdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-mdpi/ic_launcher_round.png" /></a>
-</td></tr><tr><th></th><th></th></tr>
-</table>
-<span class="location"><a href="../../src/main/res/mipmap-xhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xhdpi/ic_launcher_round.png</a></span>: <span class="message">The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png</span><br />
-<ul></ul><button id="Location3DivLink" onclick="reveal('Location3Div');" />+ 1 Additional Locations...</button>
-<div id="Location3Div" style="display: none">
-Additional locations: <ul>
-<li> <span class="location"><a href="../../src/main/res/mipmap-xhdpi/ic_launcher.png">../../src/main/res/mipmap-xhdpi/ic_launcher.png</a></span>
-</ul>
-</div><br/><br/>
-<table>
-<tr><td><a href="../../src/main/res/mipmap-xhdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/mipmap-xhdpi/ic_launcher.png" /></a>
-</td><td><a href="../../src/main/res/mipmap-xhdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-xhdpi/ic_launcher_round.png" /></a>
-</td></tr><tr><th></th><th></th></tr>
-</table>
-<span class="location"><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png</a></span>: <span class="message">The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png</span><br />
-<ul></ul><button id="Location4DivLink" onclick="reveal('Location4Div');" />+ 1 Additional Locations...</button>
-<div id="Location4Div" style="display: none">
-Additional locations: <ul>
-<li> <span class="location"><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher.png">../../src/main/res/mipmap-xxhdpi/ic_launcher.png</a></span>
-</ul>
-</div><br/><br/>
-<table>
-<tr><td><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/mipmap-xxhdpi/ic_launcher.png" /></a>
-</td><td><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png" /></a>
-</td></tr><tr><th></th><th></th></tr>
-</table>
-<span class="location"><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png</a></span>: <span class="message">The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png</span><br />
-<ul></ul><button id="Location5DivLink" onclick="reveal('Location5Div');" />+ 1 Additional Locations...</button>
-<div id="Location5Div" style="display: none">
-Additional locations: <ul>
-<li> <span class="location"><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher.png">../../src/main/res/mipmap-xxxhdpi/ic_launcher.png</a></span>
-</ul>
-</div><br/><br/>
-<table>
-<tr><td><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/mipmap-xxxhdpi/ic_launcher.png" /></a>
-</td><td><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" /></a>
-</td></tr><tr><th></th><th></th></tr>
-</table>
-</div>
-<div class="metadata"><div class="explanation" id="explanationIconDuplicates" style="display: none;">
-If an icon is repeated under different names, you can consolidate and just use one of the icons and delete the others to make your application smaller. However, duplicated icons usually are not intentional and can sometimes point to icons that were accidentally overwritten or accidentally not updated.<br/>To suppress this error, use the issue id "IconDuplicates" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
-<br/></div>
-</div>
-</div>
-<div class="chips">
-<span class="mdl-chip">
-    <span class="mdl-chip__text">IconDuplicates</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Icons</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Usability</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Warning</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Priority 3/10</span>
-</span>
-</div>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationIconDuplicatesLink" onclick="reveal('explanationIconDuplicates');">
-Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="IconDuplicatesCardLink" onclick="hideid('IconDuplicatesCard');">
 Dismiss</button>            </div>
             </div>
           </section>
