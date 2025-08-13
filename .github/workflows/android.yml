@@ -72,7 +72,9 @@ jobs:
         echo "Cleaning project..."
         ./gradlew clean --stacktrace
         rm -rf app/build/
-        echo "Clean completed"
+        rm -rf .gradle/
+        rm -rf ~/.gradle/caches/
+        echo "Deep clean completed"
       
     # Step 2: Validate Resources Before Build
     - name: Validate Resources
@@ -82,22 +84,18 @@ jobs:
         find app/src/main/res -name "*.xml" -exec xmllint --noout {} \; || echo "Some XML files have issues"
         echo "Resource validation completed"
     
-    # Step 3: Build Debug APK (main target)
+    # Step 3: Build Debug APK (main target)  
     - name: Build Debug APK
       run: |
         echo "Building debug APK..."
         echo "ANDROID_SDK_ROOT: $ANDROID_SDK_ROOT"
         echo "JAVA_HOME: $JAVA_HOME"
-        echo "Current directory contents:"
-        ls -la
-        echo "App directory contents:"
-        ls -la app/
-        echo "Resources directory contents:"
-        ls -la app/src/main/res/values/
-        # Try build with dependency resolution first
-        ./gradlew app:dependencies --configuration debugRuntimeClasspath
-        echo "Building APK..."
-        ./gradlew assembleDebug --stacktrace --info --no-daemon
+        echo "Checking theme files:"
+        cat app/src/main/res/values/themes.xml
+        echo "Checking build.gradle dependencies:"
+        grep -A 20 "dependencies {" app/build.gradle
+        echo "Building APK with verbose output..."
+        ./gradlew assembleDebug --stacktrace --info --no-daemon --refresh-dependencies
         echo "Build completed, checking outputs..."
         ls -la app/build/outputs/apk/debug/ 2>/dev/null || echo "No debug APK outputs found"
       

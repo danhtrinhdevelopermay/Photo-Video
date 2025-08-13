@@ -116,12 +116,12 @@ app/
 - **Enhanced CI/CD Pipeline**: Added Android SDK setup and XML validation to prevent build failures
 - **GitHub Actions Robustness**: Added fallback Python XML validation, SDK license acceptance, improved error handling
 - **YAML Syntax Fix**: Resolved line 67 error by creating separate validate_xml.py script for cleaner YAML structure
-- **CRITICAL APK Build Fix (August 13, 2025)**: Resolved `attr/colorBackground` error by:
-  - Simplified Material3 theme definitions to eliminate attribute conflicts
-  - Updated Material Design library to v1.11.0 for better compatibility
-  - Removed conflicting custom attribute definitions
-  - Enhanced GitHub Actions with resource validation and better diagnostics
-  - Fixed theme inheritance to use pure Material3 without mixing design systems
+- **CRITICAL APK Build Fix (August 13, 2025)**: Resolved persistent `attr/colorBackground` error by:
+  - **Dependency Cleanup**: Removed conflicting Material Design libraries (Material 2 + Material Components)
+  - **Theme System Overhaul**: Switched from Material3 to AppCompat for maximum compatibility
+  - **Custom Attribute Definition**: Added missing colorBackground attribute to resolve resource linking
+  - **Enhanced CI/CD**: Deep clean process and dependency refresh in GitHub Actions
+  - **Build Validation**: Comprehensive XML validation and dependency conflict resolution
 
 ## Build Instructions
 
