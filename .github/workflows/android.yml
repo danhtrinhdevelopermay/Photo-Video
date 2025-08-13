@@ -63,23 +63,7 @@ jobs:
           echo "XML files validation passed with xmllint!"
         else
           echo "xmllint not available, using Python validation..."
-          python3 -c "
-import xml.etree.ElementTree as ET
-import sys
-try:
-    ET.parse('app/src/main/res/xml/backup_rules.xml')
-    print('✅ backup_rules.xml is valid XML')
-except Exception as e:
-    print(f'❌ backup_rules.xml error: {e}')
-    sys.exit(1)
-try:
-    ET.parse('app/src/main/res/xml/data_extraction_rules.xml')
-    print('✅ data_extraction_rules.xml is valid XML')
-except Exception as e:
-    print(f'❌ data_extraction_rules.xml error: {e}')
-    sys.exit(1)
-print('XML files validation passed with Python!')
-"
+          python3 validate_xml.py
         fi
     
     # Step 1: Clean project first
