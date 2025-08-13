@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mediaviewer.ios.GalleryViewModelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-08-13T01:37:07" hostname="8ff66f5b7be3" time="5.496">
+  <properties/>
+  <testcase name="initial state should be loading" classname="com.mediaviewer.ios.GalleryViewModelTest" time="5.233"/>
+  <testcase name="loadMedia should update media items and albums" classname="com.mediaviewer.ios.GalleryViewModelTest" time="0.213"/>
+  <testcase name="selectTab should update selected tab" classname="com.mediaviewer.ios.GalleryViewModelTest" time="0.048"/>
+  <system-out><![CDATA[WARNING: No manifest file found at ./AndroidManifest.xml.
+Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+]]></system-out>
+  <system-err><![CDATA[No such manifest file: ./AndroidManifest.xml
+]]></system-err>
+</testsuite>

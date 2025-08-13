@@ -1,0 +1,34 @@
+R_DEF: Internal format may change without notice
+local
+color blur_overlay
+color glass_accent
+color glass_background
+color system_background
+color system_background_secondary
+color system_background_tertiary
+color system_blue
+color system_green
+color system_label
+color system_label_secondary
+color system_label_tertiary
+color system_orange
+color system_pink
+color system_purple
+color system_red
+color system_yellow
+mipmap ic_launcher
+mipmap ic_launcher_round
+string albums
+string app_name
+string back
+string delete
+string favorite
+string library
+string media_count
+string photos
+string share
+string video_duration
+style Theme.iOSStyleMediaViewer
+style Theme.iOSStyleMediaViewer.Fullscreen
+xml backup_rules
+xml data_extraction_rules

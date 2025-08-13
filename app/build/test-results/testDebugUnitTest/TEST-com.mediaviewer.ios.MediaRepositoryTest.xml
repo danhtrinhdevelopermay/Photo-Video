@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mediaviewer.ios.MediaRepositoryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-08-13T01:37:12" hostname="8ff66f5b7be3" time="3.028">
+  <properties/>
+  <testcase name="getImages should return only image media items" classname="com.mediaviewer.ios.MediaRepositoryTest" time="2.851"/>
+  <testcase name="getAllMedia should return list of media items" classname="com.mediaviewer.ios.MediaRepositoryTest" time="0.077"/>
+  <testcase name="getAlbums should return list of albums" classname="com.mediaviewer.ios.MediaRepositoryTest" time="0.042"/>
+  <testcase name="getVideos should return only video media items" classname="com.mediaviewer.ios.MediaRepositoryTest" time="0.058"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
