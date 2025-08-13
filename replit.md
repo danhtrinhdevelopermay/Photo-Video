@@ -114,6 +114,7 @@ app/
 - **Optimized build configuration**: Cleaned up build.gradle files, fixed wrapper, disabled problematic features
 - **Critical XML Fix (August 12, 2025)**: Fixed "Premature end of file" error in backup_rules.xml by adding proper root element
 - **Enhanced CI/CD Pipeline**: Added Android SDK setup and XML validation to prevent build failures
+- **GitHub Actions Robustness**: Added fallback Python XML validation, SDK license acceptance, improved error handling
 
 ## Build Instructions
 

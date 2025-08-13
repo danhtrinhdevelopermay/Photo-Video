@@ -1,0 +1,58 @@
+Run echo "Checking Gradle wrapper..."
+Checking Gradle wrapper...
+Downloading https://services.gradle.org/distributions/gradle-8.4-bin.zip
+............10%............20%.............30%............40%.............50%............60%.............70%............80%.............90%............100%
+
+Welcome to Gradle 8.4!
+
+Here are the highlights of this release:
+ - Compiling and testing with Java 21
+ - Faster Java compilation on Windows
+ - Role focused dependency configurations creation
+
+For more details see https://docs.gradle.org/8.4/release-notes.html
+
+
+------------------------------------------------------------
+Gradle 8.4
+------------------------------------------------------------
+
+Build time:   2023-10-04 20:52:13 UTC
+Revision:     e9251e572c9bd1d01e503a0dfdf43aedaeecdc3f
+
+Kotlin:       1.9.10
+Groovy:       3.0.17
+Ant:          Apache Ant(TM) version 1.10.13 compiled on January 4 2023
+JVM:          17.0.16 (Eclipse Adoptium 17.0.16+8)
+OS:           Linux 6.11.0-1018-azure amd64
+
+Checking project structure...
+total 84
+drwxr-xr-x 7 runner docker 4096 Aug 12 15:24 .
+drwxr-xr-x 3 runner docker 4096 Aug 12 15:24 ..
+drwxr-xr-x 7 runner docker 4096 Aug 12 15:24 .git
+drwxr-xr-x 3 runner docker 4096 Aug 12 15:24 .github
+-rw-r--r-- 1 runner docker  194 Aug 12 15:24 .replit
+-rw-r--r-- 1 runner docker 4052 Aug 12 15:24 GITHUB_ACTIONS_FIXES.md
+-rw-r--r-- 1 runner docker 4443 Aug 12 15:24 README.md
+drwxr-xr-x 3 runner docker 4096 Aug 12 15:24 app
+drwxr-xr-x 2 runner docker 4096 Aug 12 15:24 attached_assets
+-rwxr-xr-x 1 runner docker  724 Aug 12 15:24 build-test.sh
+-rw-r--r-- 1 runner docker  406 Aug 12 15:24 build.gradle
+drwxr-xr-x 3 runner docker 4096 Aug 12 15:24 gradle
+-rw-r--r-- 1 runner docker 1413 Aug 12 15:24 gradle.properties
+-rw-r--r-- 1 runner docker   43 Aug 12 15:24 gradle.properties.bak
+-rwxr-xr-x 1 runner docker 6280 Aug 12 15:24 gradlew
+-rw-r--r-- 1 runner docker  198 Aug 12 15:24 local.properties
+-rw-r--r-- 1 runner docker 6352 Aug 12 15:24 replit.md
+-rw-r--r-- 1 runner docker  376 Aug 12 15:24 settings.gradle
+total 24
+drwxr-xr-x 3 runner docker 4096 Aug 12 15:24 .
+drwxr-xr-x 7 runner docker 4096 Aug 12 15:24 ..
+-rw-r--r-- 1 runner docker 3090 Aug 12 15:24 build.gradle
+-rw-r--r-- 1 runner docker 3722 Aug 12 15:24 build.gradle.backup
+-rw-r--r-- 1 runner docker 1112 Aug 12 15:24 proguard-rules.pro
+drwxr-xr-x 5 runner docker 4096 Aug 12 15:24 src
+Verifying XML files are valid...
+/home/runner/work/_temp/23e492df-93b8-435a-96fb-1c59c0dfa1c2.sh: line 7: xmllint: command not found
+Error: Process completed with exit code 127.
